@@ -74,7 +74,7 @@ vector<int> readK(string filename) {
     if (line[0] == '#') {
       skip++;
       if (skip == 4) {
-        stringstream ss(line.substr(4, line.size()-2));
+        stringstream ss(line.substr(2, line.size()-2));
         int k;
         while (ss >> k) {
           K.push_back(k);
